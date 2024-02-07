@@ -32,14 +32,14 @@ const Task = ({ id, label, isCompleted}: Props) => {
     >
       <div className="flex items-center gap-x-3 sm:gap-x-6">
         <div className="w-5 h-5 sm:w-6 sm:h-6 rounded-full border border-[#E3E4F1] dark:border-[#393A4B] min-w-5 sm:min-w-5">
-          {isCompleted && <img src="assets/svg/selected-task.svg" />}
+          {isCompleted && <img src="/svg/selected-task.svg" />}
         </div>
         <div className={`${isCompleted && 'text-[#D1D2DA] line-through dark:text-[#4D5067]'} text-[#494C6B] dark:text-[#C8CBE7] tracking-[-.25px] text-[0.75rem] sm:text-[1.125rem]`}>
           {label}
         </div>
       </div>
       <div className="hidden group-hover:block" onClick={handleRemoveTask}>
-          <img src="assets/svg/remove-icon.svg" />
+          <img src="/svg/remove-icon.svg" />
       </div>
     </div>
   );

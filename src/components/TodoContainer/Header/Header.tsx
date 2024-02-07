@@ -27,7 +27,7 @@ const Header = () => {
       </h1>
       <button onClick={toggleDarkMode}>
         <img
-          src={darkMode ? `/assets/svg/sun.svg` : "/assets/svg/moon.svg"}
+          src={darkMode ? `/svg/sun.svg` : "/svg/moon.svg"}
           className="mt-[-5px]"
         />
       </button>
